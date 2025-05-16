@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    animation: fondoAnimado 12s ease infinite alternate;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #96e6a1);
+    background-size: 500% 500%;
+    color: #fff;
+  }
+  
+  @keyframes fondoAnimado {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 100% 50%; }
+    50% { background-position: 100% 0%; }
+    75% { background-position: 0% 100%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  h1, h2 {
+    margin: 40px 0 20px;
+    animation: aparecer 1.5s ease-in-out forwards;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    background: linear-gradient(60deg, #ff6ec4, #7873f5, #18ffff, #ffd700);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: gradText 8s ease infinite, aparecer 1.5s ease-in-out;
+  }
+  
+  h2 {
+    font-size: 40px;
+    background: linear-gradient(60deg, #00ff99, #ff9900, #ff0066);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: gradText 6s ease infinite reverse, aparecer 2s ease-in-out;
+  }
+  
+  .integrantes {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: aparecer 2s ease-in-out;
+  }
+  
+  .integrantes p {
+    font-size: 40px;
+    margin: 12px 0;
+    background: linear-gradient(90deg, #ff5858, #f09819, #8ec5fc, #e0c3fc);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: gradText 6s ease infinite forwards;
+  }
+  
+  @keyframes gradText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+ .cielo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+.cielo img {
+  border-radius: 55px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.cielo {
+  transform: scale(1.05);
+}
+
+  

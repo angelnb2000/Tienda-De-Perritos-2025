@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Perritos</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div id="kiko-slider">
+    <ul class="slider">
+      <li id="slider1"><img src="img/1.png" alt=""></li>
+      <li id="slider2"><img src="img/2.png" alt=""></li>
+      <li id="slider3"><img src="img/3.png" alt=""></li>
+      <li id="slider4"><img src="img/4.png" alt=""></li>
+      <li id="slider5"><img src="img/5.png" alt=""></li>
+      <li id="slider6"><img src="img/6.png" alt=""></li>
+      <li id="slider7"><img src="img/7.png" alt=""></li>
+      <li id="slider8"><img src="img/8.png" alt=""></li>
+      <li id="slider9"><img src="img/9.png" alt=""></li>
+    </ul>
+    <ul class="menu">
+      <li><a href="#slider1"></a></li>
+      <li><a href="#slider2"></a></li>
+      <li><a href="#slider3"></a></li>
+      <li><a href="#slider4"></a></li>
+      <li><a href="#slider5"></a></li>
+      <li><a href="#slider6"></a></li>
+      <li><a href="#slider7"></a></li>
+      <li><a href="#slider8"></a></li>
+      <li><a href="#slider9"></a></li>
+    </ul>
+  </div>
+
+  <h1>Tienda de Perritos</h1>
+  <section class="contenedor">
+    <div class="contenedor-items">
+      <!-- Repite este bloque .item cambiando src y data-hover -->
+      <div class="item">
+        <span class="titulo-item">Bichon</span>
+        <img src="img/perrito 1.png" data-hover="img/d1.png" class="img-item" alt="">
+        <span class="precio-item">S/2.600</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Chihuahua</span>
+        <img src="img/perrito 2.png" data-hover="img/d2.png" class="img-item" alt="">
+        <span class="precio-item">S/1.000.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Pomerania</span>
+        <img src="img/perrito 3.png" data-hover="img/d3.png" class="img-item" alt="">
+        <span class="precio-item">S/5.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Boxer</span>
+        <img src="img/perrito 4.png" data-hover="img/d4.png" class="img-item" alt="">
+        <span class="precio-item">S/3.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Airedale Terrier</span>
+        <img src="img/perrito 5.png" data-hover="img/d5.png" class="img-item" alt="">
+        <span class="precio-item">S/3.100</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Foxhound</span>
+        <img src="img/perrito 6.png" data-hover="img/d6.png" class="img-item" alt="">
+        <span class="precio-item">S/5.000</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Golden Retriever</span>
+        <img src="img/perrito 7.png" data-hover="img/d7.png" class="img-item" alt="">
+        <span class="precio-item">S/2.500</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Boyera De Berna</span>
+        <img src="img/perrito 8.png" data-hover="img/d8.png" class="img-item" alt="">
+        <span class="precio-item">S/2.800</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Rottweiler</span>
+        <img src="img/perrito 9.png" data-hover="img/d9.png" class="img-item" alt="">
+        <span class="precio-item">S/3.200</span>
+        <button class="boton-item">Agregar al Carrito</button>
+      </div>
+    </div>
+
+    <div class="carrito" id="carrito">
+      <div class="header-carrito">
+        <h2>Tu Carrito</h2>
+        <button class="btn-quitar-seleccionados">Quitar Seleccionados</button>
+      </div>
+      <div class="carrito-items"></div>
+      <div class="carrito-total">
+        <div class="fila">
+          <strong>Tu Total:</strong>
+          <span class="carrito-precio-total">S/0,00</span>
+        </div>
+        <button class="btn-pagar">Pagar</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
